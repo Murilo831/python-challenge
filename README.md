@@ -16,6 +16,22 @@
    ## Ative o docker
    sudo docker-compose up
 
+    ## Abra outro terminal
+    sudo docker-compose exec web /bin/sh
+
+    ## e faça a migração
+    python manage.py migrate
+
+    ## Sair
+    exit
+
+    ## Ative o docker novamente
+    sudo docker-compose up
+
+## Acesse o link
+
+- 0.0.0.0:8000/api/
+
 
 ## Execute as migrações
 python manage.py migrate
