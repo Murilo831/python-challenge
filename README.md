@@ -1,21 +1,17 @@
 # Python Challenge
 
-# Open Food Facts REST API
+## Descrição
 
-Este projeto é uma REST API desenvolvida em Django que utiliza dados do projeto Open Food Facts. A API permite que os usuários acessem informações nutricionais de produtos alimentícios, facilitando o trabalho da equipe de nutricionistas da empresa Fitness Foods LC.
-
-## Instalação
-
-1. Faça um fork deste repositório em sua conta do GitHub.
+<p>Esse projeto foi desenvolvido para dar suporte a equipes de nutricionistas, para que eles possam revisar de maneira fácil e rápida as informações nutricionais dos alimentos dos seus usuários</p>
 
 2. Clone o repositório forkado para o seu ambiente local:
 
    ```bash
-   git clone https://github.com/seu-usuario/open-food-facts-api.git
+   git clone https://github.com/Murilo831/python-challenge.git
 
 ## Acesse o diretório do projeto
 
-1. cd open-food-facts-api
+1. cd python-challenge
 
 ## Crie um ambiente virtual
 
