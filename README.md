@@ -2,39 +2,51 @@
 
 ## Descrição
 
-<p>Esse projeto foi desenvolvido para dar suporte a equipes de nutricionistas, para que eles possam revisar de maneira fácil e rápida as informações nutricionais dos alimentos dos seus usuários</p>
+Este projeto foi desenvolvido para dar suporte a equipes de nutricionistas, permitindo que eles revisem facilmente as informações nutricionais dos alimentos de seus usuários.
 
-2. Clone o repositório para o seu ambiente local:
+### Tecnologias Utilizadas
+
+- **Django REST framework**: Esta aplicação é construída usando o Django REST framework, que oferece um poderoso conjunto de ferramentas para criar APIs web.
+- **PostgreSQL**: O banco de dados PostgreSQL é usado para armazenar os dados do projeto, garantindo robustez e escalabilidade.
+- **Docker**: Utilizamos o Docker para facilitar a configuração do ambiente de desenvolvimento.
+
+## Configuração
+
+Para configurar o projeto em seu ambiente local, siga estas etapas:
+
+1. Clone o repositório para o seu ambiente local:
 
    ```bash
    git clone https://github.com/Murilo831/python-challenge.git
-
-   ## Acesse o diretório do projeto
-
    cd python-challenge
 
-   ## Ative o docker
+2. Inicialize o Docker Compose:
+
+   ```bash
    sudo docker-compose up
 
-    ## Abra outro terminal
-    sudo docker-compose exec web /bin/sh
+3. Abra outro terminal e execute o seguinte comando para realizar a migração do banco de dados:
 
-    ## e faça a migração
-    python manage.py migrate
+   ```bash
+   sudo docker-compose exec web /bin/sh
+   python manage.py migrate
+   exit
 
-    ## Sair
-    exit
+4. Ative o Docker novamente:
 
-    ## Ative o docker novamente
-    sudo docker-compose up
+   ```bash
+     sudo docker-compose up
 
-## Acesse o link
+# Uso
+## Para acessar a API, vá para o seguinte link:
 
-- 0.0.0.0:8000/api/
+- http://0.0.0.0:8000/api/
 
+# Testes
+## Os testes estão configurados para garantir a qualidade do código. Para executar os testes, use o seguinte comando:
 
-## Execute as migrações
-python manage.py migrate
+   ```bash
+      sudo docker-compose exec web /bin/sh
+      python manage.py test
+      exit
 
-## inicie o servidor
-python manage.py runserver
